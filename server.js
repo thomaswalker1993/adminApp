@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('*', function(req, res) {
-  res.sendfile('public/index.html')
+  res.sendFile('public/index.html')
 })
 
 //Listen to port 3000
